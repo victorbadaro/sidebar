@@ -4,24 +4,39 @@ export const Container = styled.aside`
   position: absolute;
   top: 48px;
   left: 48px;
-  display: flex;
-  flex-direction: column;
-  width: 50px;
   height: 80%;
-  overflow: hidden;
-  border-radius: 8px;
-  background-color: #222;
+  border-radius: 8px 0 0 8px;
 
-  button {
-    padding: 16px 0;
-    border: none;
-    background-color: transparent;
-    color: blueviolet;
+  .dynamic-panel {
+    height: 100%;
+    border-radius: 12px 8px 8px 12px;
+    /* border-radius: 8px; */
+    overflow: hidden;
+  }
 
-    transition: background-color 200ms;
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #222;
 
-    &:hover {
-      background-color: #111;
+    button {
+      padding: 16px 0;
+      border: none;
+      background-color: transparent;
+      color: blueviolet;
+
+      transition: background-color 200ms;
+
+      &:hover {
+        background-color: #111;
+      }
     }
   }
 `;
